@@ -11,6 +11,7 @@ var getRepoName=function() {
     if(repoName) {
         //display repo name on the oage 
     getRepoIssues(repoName);
+
     repoNameEl.textContent = repoName;
 
 
@@ -41,7 +42,6 @@ var getRepoIssues = function(repo) {
         document.location.replace("./index.html");
     }
 });
-    console.log(repo);
 };
 
 var displayIssues = function(issues) {
@@ -77,8 +77,8 @@ var displayIssues = function(issues) {
 
         // append to container 
         issueEl.appendChild(typeEl);
-        }
         issueContainerEl.appendChild(issueEl);
+    }
     };
 
 var displayWarning = function (repo) {
